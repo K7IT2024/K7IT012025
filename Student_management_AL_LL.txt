@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+
+public class StudentListDemo {
+
+    public static void main(String[] args) {
+
+        // ArrayList - store student names
+        ArrayList<String> students = new ArrayList<String>();
+
+        // LinkedList - store removed student names
+        LinkedList<String> removedStudents = new LinkedList<String>();
+
+        // ----- ADD -----
+        students.add("Madhu");
+        students.add("Roopa");
+        students.add("Sneha");
+		students.add("Deepa");
+		students.add("Manish");
+		
+        // ----- READ -----
+        System.out.println("Student List: " + students);
+
+        // ----- REMOVE -----
+        String removed = students.remove(4);
+		
+        removedStudents.add(removed);          
+
+        // ----- READ AGAIN -----
+        System.out.println("Updated Student List: " + students);
+        System.out.println("Removed Students: " + removedStudents);
+    }
+}
